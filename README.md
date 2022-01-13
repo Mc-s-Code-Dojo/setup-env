@@ -71,7 +71,7 @@ Next, type the following :
 #include <unistd.h>
 
 int main() {
-	write(1, "42", 2);
+    write(1, "42", 2);
 }
 ```
 
