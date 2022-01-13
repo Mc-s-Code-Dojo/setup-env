@@ -34,7 +34,18 @@ If you're running Mac, you should be fine even though all tools aren't necessari
 
 ## Terminal
 
-The terminal is one of the programmers most important tools. It's a graphical user interface for your shell. A shell is an interface that executes commands you type in it.
+The terminal is one of the programmer's most important tools. It's a graphical user interface for your shell.
+A shell is an interface that executes commands you type in it.
+
+```sh
+                        ------------- This is where you type your commands
+                        |
+        |------------------------------|
+prompt>  # blabla blabla.bl --bla | yes
+  ^
+  |
+  --- this is your prompt, it usually displays information about your current path, time, etc
+```
 
 Let's give that a shot, open a terminal and type : `ls`.
 
@@ -68,7 +79,7 @@ Now we want to go back to Normal mode, for that press Escape.
 
 But how do we exit vim ? :thinking:
 
-Well, now that you're in normal mode, you're going to type a command to `w`rite the file to disk and `q`uit vim. Type the following : `:wq` (you should see it show in the bottom left corner of your editor) and Enter. This saved the content you wrote in the file and exitted vim.
+Well, now that you're in Normal mode, you're going to type a command to `w`rite the file to disk and `q`uit vim. Type the following : `:wq` (you should see it show in the bottom left corner of your editor) and Enter. This saved the content you wrote in the file and exitted vim.
 
 To check everything we wrote in the file we can use the `cat` command.
 
@@ -95,8 +106,6 @@ For that you're going to push the file to github with `git`.
 ```sh
 git add write_42.c
 git commit -m "My first program !"
-
-# '-u origin main' is only needed on the first push
-git push -u origin main
+git push
 ```
 
