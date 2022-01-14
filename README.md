@@ -57,6 +57,22 @@ Another one  of the most important tools is the text editor. This is how you wri
 
 We're going to be using [vim](https://www.vim.org/). Don't worry about installing it, it's already there on Ubuntu.
 
+## Package manager
+
+Linux comes by default with a program installed that allows you to manage other packages (hence 'package manager').
+
+Each platform (Debian, RHEL, OpenSuse, etc) come with their version (respectively `apt`, `yum`, `zypper`).
+
+This is one way of installing programs on your system, you can always download a binary from internet and run it or compile the source code to create the binary and then run it (this is usually a more involved process).
+
+So if you want to install a new package, run the following :
+
+```sh
+# if it has been a while
+sudo apt update
+sudo apt install some_package
+```
+
 ## git
 
 git is what we call a source version control system. It is composed of a server that keeps a copy of your files and a client, the `git` command.
@@ -105,6 +121,16 @@ To check everything we wrote in the file we can use the `cat` command.
 Run : `cat write_42.c`.
 
 Don't worry if you don't understand what's going on for now, this is only to test if everything is set up properly.
+
+### Compiling your code
+
+To be able to run a program your wrote, you need to transform it to something your computer can understand. This is what we call compiling.
+
+In C, you will very often use [gcc](https://gcc.gnu.org/).
+
+Basically what the compiler does is read your code file, check if the syntax is correct, parse it and then outputs a binary file (0s and 1s) that the computer can execute.
+
+To install gcc on Ubuntu, I believe you need to run : `sudo apt install gcc`.
 
 Once you're done with editing your program, let's compile it and see if it runs.
 
