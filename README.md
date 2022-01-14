@@ -57,6 +57,25 @@ Another one  of the most important tools is the text editor. This is how you wri
 
 We're going to be using [vim](https://www.vim.org/). Don't worry about installing it, it's already there on Ubuntu.
 
+## git
+
+git is what we call a source version control system. It is composed of a server that keeps a copy of your files and a client, the `git` command.
+
+To install `git` check out the [official documentation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+#### A quick shorter on git
+
+It saves every change that happened in the folder it is initalised in.
+
+If you run `ls -la` you should see a `.git` folder (in a folder you cloned or when you run `git init`). This is where all the data changes are saved. This is great in case you need to revert to an old version or keep track of new features.
+You can view the commit history by running `git log`.
+
+To clone your repository, you need to got to Github and find it on the website. Then, find the clone url. For example, if I want to clone https://github.com/huggingface/tokenizers I click on the green `Code` button and copy the git url :
+
+![tokenizers repo home page with Code button clicked and mouse hovering copy button next to git url]()
+
+Finally, for the tokenizers repository I'll run : `git clone git@github.com:huggingface/tokenizers.git` (it won't be the same url for your repo).
+
 ## Your first program
 
 Let's write our first program !
@@ -102,6 +121,18 @@ And that should print `42` !
 Finally, I'm going to need to see that you wrote the program correctly.
 
 For that you're going to push the file to github with `git`.
+
+Once you cloned or init git in your folder and wrote your program, you can type `git status`. It should tell you what has been modified.
+
+Then, you want to create a commit, see this as a new version. For that, you need to add the files to the commit, then commit and push.
+
+Basically, see your commit as an open box in which you `add` files. Once you `commit`, you close the box and seal it. Finally, you `push` that box to the remote server so that it can keep a copy of your changes.
+
+Why do you need a remote server you ask ? Well, imagine you lose your data in a fire, car crash, because of a virus, spilled tea or beer on your keyboard, etc etc etc. You'll be very happy to have a remote copy, especially if it's code that allows your company to make big $$$ !
+
+We use github as our, let's call it git-server-as-a-service. You don't need to know how they manage the servers, just know that once it's pushed there it's safe from disasters.
+
+These are the commands you'll want to run to upload your files to github :
 
 ```sh
 git add write_42.c
