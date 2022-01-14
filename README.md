@@ -51,6 +51,18 @@ Let's give that a shot, open a terminal and type : `ls`.
 
 You should see a list of files that are in your current directory. How do you know in what directory you currently are in ? Either it's displayed in your shell prompt, either you can type : `pwd`.
 
+Also, to `c`hange the current `d`irectory use `cd`.
+
+Try the following :
+
+```sh
+# the ~ character, tilde, is a symbol that refers to your home directory
+mkdir ~/my_super_project # mkdir stand for make directories
+cd ~/my_super_project
+pwd
+'/home/me/my_super_project'
+```
+
 ## Text Editor
 
 Another one  of the most important tools is the text editor. This is how you write your code in files.
