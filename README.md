@@ -72,7 +72,7 @@ You can view the commit history by running `git log`.
 
 To clone your repository, you need to got to Github and find it on the website. Then, find the clone url. For example, if I want to clone https://github.com/huggingface/tokenizers I click on the green `Code` button and copy the git url :
 
-![tokenizers repo home page with Code button clicked and mouse hovering copy button next to git url]()
+![tokenizers repo home page with Code button clicked and mouse hovering copy button next to git url](get_clone_url.png)
 
 Finally, for the tokenizers repository I'll run : `git clone git@github.com:huggingface/tokenizers.git` (it won't be the same url for your repo).
 
