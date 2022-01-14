@@ -73,7 +73,7 @@ We're going to be using [vim](https://www.vim.org/). Don't worry about installin
 
 Linux comes by default with a program installed that allows you to manage other packages (hence 'package manager').
 
-Each platform (Debian, RHEL, OpenSuse, etc) come with their version (respectively `apt`, `yum`, `zypper`).
+Each platform (Debian, RHEL, OpenSuse, etc) comes with their version (respectively `apt`, `yum`, `zypper`).
 
 This is one way of installing programs on your system, you can always download a binary from internet and run it or compile the source code to create the binary and then run it (this is usually a more involved process).
 
@@ -93,7 +93,7 @@ To install `git` check out the [official documentation](https://git-scm.com/book
 
 #### A quick shorter on git
 
-It saves every change that happened in the folder it is initalised in.
+It saves every change that happened in the folder it is initialised in.
 
 If you run `ls -la` you should see a `.git` folder (in a folder you cloned or when you run `git init`). This is where all the data changes are saved. This is great in case you need to revert to an old version or keep track of new features.
 You can view the commit history by running `git log`.
