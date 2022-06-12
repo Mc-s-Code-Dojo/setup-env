@@ -178,3 +178,15 @@ git commit -m "My first program !"
 git push
 ```
 
+# Appendix
+
+If you're ever stuck with something and need some help, there are multiple things you can do, in order of priority :
+
+1. use the `man` command, e.g. you have an issue with `git` do : `man git`
+   This will open the manual page for the `git` command
+2. Google it ! You're facing some weird error message ? Copy paste the relevant
+   part of the error in google. Try to identify what is going wrong and
+   search on forums and the documentation page for the library / command / whatever.
+3. Send me a message, I'll do my best to answer promptly. ***BUT*** I **won't** answer
+   if you haven't tried 1. and 2. before :wink:
+
